@@ -47,14 +47,14 @@ robot grasping.
 
 ### Supported platforms
 LibHand v0.9.z is currently actively developed and/or supported on
-- Debian Jessie x86_64 and armhf
-- Ubuntu 12.04/14.04/16.04 x86_64 systems.
-- Windows 7/8/10 x86_64
-- macOS Sierra 10.12
+- Debian Stretch x86_64 and ARMv8-A
+- Ubuntu 18.04 x86_64 systems.
+- Windows 10 x86_64
+- macOS Catalina 10.15 x86_64
 
 Any Debian/Ubuntu derivative (such as Linux Mint) should of course work fine without any modifications to the instructions. See below for detailed instructions.
 
-Other POSIX operating systems, and Linux distributions, CPU architectures etc should work fine, assuming you can satifying the software dependencies.
+Other POSIX operating systems, and Linux distributions, CPU architectures etc should work fine, assuming you can satisfying the software dependencies.
 
 LibHand v0.9.z's Matlab bindings are unmaintained. Matlab bindings may either updated or removed entirely in a subsequent LibHand release. See [#6](https://github.com/libhand/libhand/issues/6) for further discussion.
 
