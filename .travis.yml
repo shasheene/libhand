@@ -6,47 +6,9 @@ language: cpp
 
 matrix:
   include:
-    # Ubuntu 12.04 Precise build with GCC
+    # Ubuntu 18.04 Bionic build with GCC
     - os: linux
-      dist: precise
-      sudo: required
-      compiler: gcc
-      env:
-        - OGRE_HOME=/usr/lib/x86_64-linux-gnu/OGRE-1.7.4
-      addons:
-        apt:
-          packages:
-            - libogre-dev
-            - libboost-system-dev
-            - libglu1-mesa-dev
-            - libxt-dev
-            - libopencv-dev
-            - tcl
-            - tk
-            - libboost-system-dev
-            - libboost-filesystem-dev
-    # Ubuntu 12.04 Precise build with Clang
-    - os: linux
-      dist: precise
-      sudo: required
-      compiler: clang
-      env:
-        - OGRE_HOME=/usr/lib/x86_64-linux-gnu/OGRE-1.7.4
-      addons:
-        apt:
-          packages:
-            - libogre-dev
-            - libboost-system-dev
-            - libglu1-mesa-dev
-            - libxt-dev
-            - libopencv-dev
-            - tcl
-            - tk
-            - libboost-system-dev
-            - libboost-filesystem-dev
-    # Ubuntu 14.04 Trusty build with GCC
-    - os: linux
-      dist: trusty
+      dist: bionic
       compiler: gcc
       sudo: required
       env:
@@ -63,9 +25,9 @@ matrix:
             - tk
             - libboost-system-dev
             - libboost-filesystem-dev
-    # Ubuntu 14.04 Trusty build with Clang
+    # Ubuntu 18.04 Bionic build with Clang
     - os: linux
-      dist: trusty
+      dist: bionic
       compiler: clang
       sudo: required
       env:
@@ -84,7 +46,7 @@ matrix:
             - libboost-filesystem-dev
     # macOS
     - os: osx
-      osx_image: xcode8.2
+      osx_image: xcode11.2
       compiler: cmake
       sudo: required
       before_install:
